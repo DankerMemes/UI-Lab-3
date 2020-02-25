@@ -4,9 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <title>Signup</title>
 </head>
 <body>
+    <!--------------- NAV BAR STUFF ------------------->
+    <nav class="navbar bg-dark">
+    	<ul class="nav">
+    		<li class="nav-item">
+    			<a class="nav-link text-white pl-5 font-weight-bold" href="#">HOME</a>
+    		</li>
+    		<li class="nav-item">
+    			<a class="nav-link text-white font-weight-bold" href="#">SERVICES</a>
+    		</li>
+    		<li class="nav-item">
+    			<a class="nav-link text-white font-weight-bold" href="#">ABOUT US</a>
+    		</li>
+    		<li class="nav-item">
+    			<a class="nav-link text-white font-weight-bold" href="#">CONTACT US</a>
+    		</li>
+    	</ul>
+    	<ul class="nav">
+    		<li class="nav-item">
+    			<a class="nav-link text-white font-weight-bold" href="#">SIGN IN</a>
+    		</li>
+    		<li class="nav-item">
+    			<p class="text-white nav-link p-0 mt-2 font-weight-bold">|</p>
+    		</li>
+    		<li class="nav-item">
+    			<a class="nav-link text-white" href="#">REGISTER</a>
+    		</li>
+    	</ul>
+    </nav>
+
     
+    <!---------------------HEADER------------------>
+    <div class="container-fluid bg-special-3 p-2">
+    	<h1 class="text-center">PRIME SERVICE</h1>
+    </div>
+    <!---------------------MAIN IMAGE------------------>
+
+    <div>
+    	<img class="start-img img-fluid col-12 p-0 m-0" src="../Maintenance Repair.jpg">
+    </div>
+
+    <!---------------------REGISTRATION------------------>
+    <div class="container-fluid bg-special-1 p-4">
+        <h2 class="text-center">REGISTRATION</h2>
+
+        <div class="container">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="fName">First Name *</label>
+                        <input type="text" class="form-control" name="fName">
+                    </div>
+
+                    <div class="col-sm-2"></div>
+
+                    <div class="form-group col">
+                        <label for="mName">Middle Name(s) *</label>
+                        <input type="text" class="form-control" name="mName">
+                    </div>
+                </div>
+    
+                
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="lName">Last Name *</label>
+                        <input type="text" class="form-control" name="lName">
+                    </div>
+
+                    <div class="col-sm-2"></div>
+
+                    <div class="form-group col">
+                        <label for="gender">Gender *</label>
+                        <select type="text" class="form-control" name="gender">
+                            <option selected>Choose...</option>
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
+                            <option value="o">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="account">Account Number *</label>
+                        <input type="text" class="form-control" name="account">
+                    </div>
+                    
+                    <div class="col-sm-2"></div>
+
+                    <div class="form-group col">
+                        <label for="email">Email (Preferred) *</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                </div>
+    
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="username">Username *</label>
+                        <input type="text" class="form-control" name="username">
+                    </div>
+
+                    <div class="col-sm-2"></div>
+
+                    <div class="form-group col">
+                        <label for="pass">Password *</label>
+                        <input type="password" class="form-control" name="pass">
+                    </div>
+                </div>
+    
+                <div class="form-row">
+                    <div class="col"></div>
+                    <div class="col-sm-2"></div>
+
+                    <div class="form-group col">
+                        <label for="confPass">Confirm Password *</label>
+                        <input type="password" class="form-control" name="confPass">                
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+     <!----------------------footer---------------->
+     <footer class="text-center bg-dark text-white mb-0 pb-0">
+        <p class="pt-2 pb-1 m-0">&copy; 2020 Prime Services. All Right Reserved.</p>
+    </footer>
 </body>
 </html>
