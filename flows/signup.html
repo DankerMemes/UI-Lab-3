@@ -1,141 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <title>Signup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="../css/feather.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <title>Sign Up</title>
 </head>
 <body>
-    <!--------------- NAV BAR STUFF ------------------->
-    <nav class="navbar bg-dark">
-    	<ul class="nav">
-    		<li class="nav-item">
-    			<a class="nav-link text-white pl-5 font-weight-bold" href="#">HOME</a>
-    		</li>
-    		<li class="nav-item">
-    			<a class="nav-link text-white font-weight-bold" href="#">SERVICES</a>
-    		</li>
-    		<li class="nav-item">
-    			<a class="nav-link text-white font-weight-bold" href="#">ABOUT US</a>
-    		</li>
-    		<li class="nav-item">
-    			<a class="nav-link text-white font-weight-bold" href="#">CONTACT US</a>
-    		</li>
-    	</ul>
-    	<ul class="nav">
-    		<li class="nav-item">
-    			<a class="nav-link text-white font-weight-bold" href="#">SIGN IN</a>
-    		</li>
-    		<li class="nav-item">
-    			<p class="text-white nav-link p-0 mt-2 font-weight-bold">|</p>
-    		</li>
-    		<li class="nav-item">
-    			<a class="nav-link text-white" href="#">REGISTER</a>
-    		</li>
-    	</ul>
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#"> Prime Service</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link active" href="#">Home</a>
+                <a class="nav-item nav-link" href="#">Services</a>
+                <a class="nav-item nav-link" href="#">About Us</a>
+                <a class="nav-item nav-link" href="#">Contact Us</a>
+            </div>       
+            <span class="navbar-text">
+            <form class="form-inline">
+                <button class="btn btn-outline-light" type="button">
+                    <i class="feather-user"></i> Sign In
+                </button>        
+            </form>
+            </span>
+        </div>
     </nav>
 
-    
-    <!---------------------HEADER------------------>
-    <div class="container-fluid bg-special-3 p-2">
-    	<h1 class="text-center">PRIME SERVICE</h1>
-    </div>
-    <!---------------------MAIN IMAGE------------------>
-
-    <div>
-    	<img class="start-img img-fluid col-12 p-0 m-0" src="../Maintenance Repair.jpg">
-    </div>
-
-    <!---------------------REGISTRATION------------------>
-    <div class="container-fluid bg-special-1 p-4">
-        <h2 class="text-center">REGISTRATION</h2>
-
-        <div class="container">
-            <form>
-                <div class="form-row">
-                    <div class="form-group col">
-                        <label for="fName">First Name *</label>
-                        <input type="text" class="form-control" name="fName">
-                    </div>
-
-                    <div class="col-sm-2"></div>
-
-                    <div class="form-group col">
-                        <label for="mName">Middle Name(s) *</label>
-                        <input type="text" class="form-control" name="mName">
-                    </div>
+  <div class="container bg-special-1 p-4">            
+        <h2 class="my-4">Register</h2>
+        <form>
+            <div class="form-row mb-3">
+                <div class="form-group col">
+                    <label for="fName">First Name :</label>
+                    <input type="text" class="form-control" name="fName">
                 </div>
-    
-                
-                <div class="form-row">
-                    <div class="form-group col">
-                        <label for="lName">Last Name *</label>
-                        <input type="text" class="form-control" name="lName">
-                    </div>
 
-                    <div class="col-sm-2"></div>
+                <div class="form-group col">
+                    <label for="lName">Last Name :</label>
+                    <input type="text" class="form-control" name="lName">
+                </div>                
+            </div>
 
-                    <div class="form-group col">
-                        <label for="gender">Gender *</label>
-                        <select type="text" class="form-control" name="gender">
-                            <option selected>Choose...</option>
-                            <option value="m">Male</option>
-                            <option value="f">Female</option>
-                            <option value="o">Other</option>
-                        </select>
-                    </div>
+            <div class="form-row mb-3">                
+                <div class="form-group col">
+                    <label for="address">Address :</label>
+                    <textarea class="form-control" name="address"></textarea>
+                </div>
+            </div>
+            <div class="form-row mb-3">
+                <div class="form-group col">
+                    <label for="email">Email (Preferred) :</label>
+                    <input type="email" class="form-control" name="email">
+                </div>
+        
+
+                <div class="form-group col-s">
+                    <label for="gender">Gender :</label>
+                    <select type="text" class="form-control" name="gender">
+                        <option selected>Choose...</option>
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                        <option value="o">Other</option>
+                    </select>
+                </div>               
+            </div>
+            
+            <div class="form-row mb-3">
+                <div class="form-group col">
+                    <label for="username">Username :</label>
+                    <input type="text" class="form-control" name="username">
+                </div>
+                <div class="form-group col">
+                    <label for="account">Account Number :</label>
+                    <input type="text" class="form-control" name="account">
                 </div>
                 
-                <div class="form-row">
-                    <div class="form-group col">
-                        <label for="account">Account Number *</label>
-                        <input type="text" class="form-control" name="account">
-                    </div>
-                    
-                    <div class="col-sm-2"></div>
+            </div>
+         
 
-                    <div class="form-group col">
-                        <label for="email">Email (Preferred) *</label>
-                        <input type="email" class="form-control" name="email">
-                    </div>
-                </div>
-    
-                <div class="form-row">
-                    <div class="form-group col">
-                        <label for="username">Username *</label>
-                        <input type="text" class="form-control" name="username">
-                    </div>
-
-                    <div class="col-sm-2"></div>
-
-                    <div class="form-group col">
-                        <label for="pass">Password *</label>
+            <div class="form-row mb-3">
+                <div class="form-group col">
+                        <label for="pass">Password :</label>
                         <input type="password" class="form-control" name="pass">
                     </div>
-                </div>
-    
-                <div class="form-row">
-                    <div class="col"></div>
-                    <div class="col-sm-2"></div>
 
-                    <div class="form-group col">
-                        <label for="confPass">Confirm Password *</label>
-                        <input type="password" class="form-control" name="confPass">                
-                    </div>
+                <div class="form-group col">
+                    <label for="confPass">Confirm Password :</label>
+                    <input type="password" class="form-control" name="confPass">                
                 </div>
-                
-                <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-            </form>
-        </div>
+            </div>
+            
+            <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+        </form>
     </div>
-     <!----------------------footer---------------->
-     <footer class="text-center bg-dark text-white mb-0 pb-0">
-        <p class="pt-2 pb-1 m-0">&copy; 2020 Prime Services. All Right Reserved.</p>
-    </footer>
-</body>
-</html>
+  </body>
+  </html>
