@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="../css/feather.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <title>Profile</title>
+</head>
+<body>
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/"> Prime Service</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link active" href="#">Home</a>
+                <a class="nav-item nav-link" href="#">Services</a>
+                <a class="nav-item nav-link" href="#">About Us</a>
+                <a class="nav-item nav-link" href="#">Contact Us</a>
+            </div>                  
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="row align-items-center justify-items-center mb-5">
+            <div class="col-sm-2 mx-5 ml-md-0  d-flex flex-column align-items-center">
+                <img src="../bio 1.jpg" class="rounded-circle image-fluid h-100 w-100 shadow-sm" alt="Profile Pic">
+            </div>
+            <div class="col my-3 d-flex flex-column align-items-center align-items-md-start  ">   
+                <div class="row">
+                    <span class="display-4" id="name">Michelle Wong</span>
+                </div>     
+                <div class="row ">
+                    <span class="lead">MWong23</span>
+                </div>            
+            </div>
+        </div>
+        <hr/>
+        
+        <!-- <h1 class="h4 mb-5">Security Settings</h1> -->
+
+        <h2 class="h5 mb-3">Security Questions</h2>
+        <form class="mb-4">
+            <div class="form-row mb-4">  
+                <div class="col-lg mb-md-0">
+
+                    <div class="form-group mb-3">
+                        <label for="question1">Question 1:</label>
+                        <select type="text" name="question1" class="form-control">
+                            <option value="Q1" selected>What is your mother's maiden name?</option>
+                            <option value="Q2">Where was your first kiss?</option>
+                            <option value="Q3">In what city or town was your first job?</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="answer1">Answer :</label>
+                        <input type="text" name="answer1" class="form-control" value="Wong">
+                    </div>
+                </div>
+                <div class="col-sm"></div>
+            </div>
+            
+            <div class="form-row mb-4">  
+                <div class="col-lg mb-md-0">
+
+                    <div class="form-group mb-3">
+                        <label for="question2">Question 2:</label>
+                        <select type="text" name="question2" class="form-control">
+                            <option value="Q1">What is your mother's maiden name?</option>
+                            <option value="Q2" selected>Where was your first kiss?</option>
+                            <option value="Q3">In what city or town was your first job?</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="answer2">Answer :</label>
+                        <input type="text" name="answer2" class="form-control" value="Highschool">
+                    </div>
+                </div>
+                <div class="col-sm"></div>
+            </div>
+
+            <div class="form-row mb-md-2 mb-3">  
+                <div class="col-lg mb-md-0">
+
+                    <div class="form-group mb-3">
+                        <label for="question3">Question 3:</label>
+                        <select type="text" name="question3" class="form-control">
+                            <option value="Q1">What is your mother's maiden name?</option>
+                            <option value="Q2">Where was your first kiss?</option>
+                            <option value="Q3" selected>In what city or town was your first job?</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="answer3">Answer :</label>
+                        <input type="text" name="answer3" class="form-control" value="Jersey">
+                    </div>
+                </div>
+                <div class="col-sm"></div>
+            </div>
+            <button class="btn btn-success">Save Changes</button>
+        </form>
+
+        <hr/>
+
+        <h2 class="h5 mt-2 mb-3">Edit Password</h2>
+
+        <form>
+            <div class="form-row">  
+                <div class="col-lg mb-md-0">
+                    <div class="form-group">
+                        <label for="new-pass">New Password</label>
+                        <input type="password" name="new-pass" class="form-control">
+                    </div>
+                </div> 
+
+                <div class="col-md-1"></div>
+
+                <div class="col-lg mb-md-0">
+                    <div class="form-group">
+                        <label for="new-pass-re">Re-enter New Password</label>
+                        <input type="password" name="new-pass-re" class="form-control">
+                    </div>
+                </div> 
+            </div>
+            <button class="btn btn-success">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
