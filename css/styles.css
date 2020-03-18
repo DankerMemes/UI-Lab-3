@@ -20,3 +20,8 @@
 {
     background-color: #f5ffff;
 }
+
+.infoButton:hover{
+    stroke: white;
+    fill: black;
+}

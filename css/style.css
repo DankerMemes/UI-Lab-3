@@ -17,3 +17,7 @@
         text-align: center;
     }
   }
+
+.infoButton:hover{
+    stroke: #0275d8 ;
+}
