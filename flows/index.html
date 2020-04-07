@@ -1,126 +1,65 @@
+<!--INDEX.HTML-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	  <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <title>Home</title>
-    	
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="../css/feather.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <title>Prime Service</title>
 </head>
 <body>
-	<!--------------- NAV BAR STUFF ------------------->
-    <nav class="navbar bg-dark">
-    	<ul class="nav">
-    		<li class="nav-item">
-    			<a class="nav-link text-white pl-5 font-weight-bold" href="#">HOME</a>
-    		</li>
-    		<li class="nav-item">
-    			<a class="nav-link text-white font-weight-bold" href="#">SERVICES</a>
-    		</li>
-    		<li class="nav-item">
-    			<a class="nav-link text-white font-weight-bold" href="#">ABOUT US</a>
-    		</li>
-    		<li class="nav-item">
-    			<a class="nav-link text-white font-weight-bold" href="#">CONTACT US</a>
-    		</li>
-    	</ul>
-    	<ul class="nav">
-    		<li class="nav-item">
-    			<a class="nav-link text-white font-weight-bold" href="#">SIGN IN</a>
-    		</li>
-    		<li class="nav-item">
-    			<p class="text-white nav-link p-0 mt-2 font-weight-bold">|</p>
-    		</li>
-    		<li class="nav-item">
-    			<a class="nav-link text-white" href="#">REGISTER</a>
-    		</li>
-    	</ul>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#"> Prime Service</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!---------------------HEADING--------------------------->
-    <div class="container-fluid bg-special-3">
-    	<h1 class="text-center">PRIME SERVICE</h1>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-nav mr-auto">
+        <a class="nav-item nav-link active" href="#">Home</a>
+        <a class="nav-item nav-link" href="#">Services</a>
+        <a class="nav-item nav-link" href="#">About Us</a>
+        <a class="nav-item nav-link" href="#">Contact Us</a>
+      </div>       
+      <span class="navbar-text ">
+      <form class="form-inline">
+        <a href="./profile.html" class="btn btn-outline-light" type="button">
+          <i class="feather-user"></i> Sign In
+        </a>        
+      </form>
+      </span>
     </div>
-    <!---------------------MAIN IMAGE------------------>
-
-    <div>
-    	<img class="start-img img-fluid col-12 p-0" src="../Maintenance Repair.jpg">
+  </nav>
+<section>
+    <div class="jumbotron height py-5 m-0 hr">
+      <h1 class="display-4 text-center">Prime Service Customer Portal</h1>
+      <p class="lead text-center">We are dedicated to providing quality customer service and maintenance to our valued
+        customers </p>
+      <hr class="my-4 text-center">
+      <p class="text-center"> Are you a current customer new to our online portal? </p>
+      <p class="lead text-center">
+        <a class="btn btn-primary btn-lg m-auto" href="signup.html" role="button">Register</a>
+      </p>
     </div>
-    <!---------------------ROW 1 OUR BUSINESS-------------->
-
-    <div class="bg-special-1 text-center pt-3 ">
-    	<h3 class="font-weight-bold text-body pb-3">
-    		OUR BUSINESS IS PRIME BECAUSE WE SERVICE ON TIME
-    	</h3>
-    	<p class="col-sm-8 m-auto">
-    		You want better service, and we want to help you get it. Prime Service offers the number 1 maintenance and repair services across New York, New Jersey & Connecticut. No Job is out of our league. If work is to be done, we will be on the run.
-    		<br><br>
-    		Registration is easy. Leave the hard work for us!
-    	</p>
-    	<button type="button" class="btn btn-primary mt-5 mb-5">
-    		GET STARTED
-    	</button>
+</section>
+  
+  <footer class="text-center mb-0 pb-0 ">
+    <div class="container">
+    <p class="pt-2 pb-1 ">&copy; 2020 Prime Services. All Right Reserved.</p>
     </div>
-    <!---------------------ROW 2 SERVICES---------------->
-    <div class="row m-0">
-    	<div class="bg-special-2 col-lg-6 m-0 p-0 ">
-    		<h3 class="text-center font-weight-bold">
-    			SERVICES OFFERED
-    		</h3>
-    		<dl class="text-right pr-5">
-    			<dd>
-    				<h5>
-    					-Heating Duct & Leaky Roof Repairs
-    				</h5>
-    			</dd>
-    			<dd class="pr-5">
-    				<h5>
-    					-Windows & Door Repairs
-    				</h5>
-    				
-    			</dd>
-    			<dd>
-    				<h5>
-    					-Plumbing & Electrical Repairs
-    				</h5>
-    				
-    			</dd>
-    			<dd>
-    				<h5>
-    					And Much More...
-    				</h5>
-    				
-    			</dd>
-    		</dl>
-    		<button type="button" class="service-btn btn btn-primary float-right mr-5">
-    			LEARN MORE
-    		</button>
-    	</div>
-    	<div class="col-lg-6 m-0 p-0">
-    		<img class="img-responsive" src="../Repair Heat Ducts.jpg" style="width:100%">
-    	</div>
-    	
-    </div>
-    <!---------------------ROW 3 --------------------->
-    <div class="row m-0">
-    	<div class="col-lg-6 m-0 p-0">
-    		<img src="../Water Pipes Repair.jpg" style="width: 100%">
-    	</div>
-    	<div class="bg-special-2 col-lg-6 m-0 p-0 ">
-    		
-    	</div>
-    </div>
+  </footer>
 
 
-    <div class="bg-special-1 container-fluid" style="min-height:90px">
-    	
-    </div>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
-    <!----------------------footer---------------->
-    <footer class="text-center bg-dark text-white mb-0 pb-0">
-    	<p class="pt-2 pb-1">&copy; 2020 Prime Services. All Right Reserved.</p>
-    </footer>
+    <!-- bootstrap js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>
