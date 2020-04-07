@@ -21,7 +21,14 @@
                 <a class="nav-item nav-link" href="#">Services</a>
                 <a class="nav-item nav-link" href="#">About Us</a>
                 <a class="nav-item nav-link" href="#">Contact Us</a>
-            </div>                  
+            </div> 
+            <span class="navbar-text">
+                <form class="form-inline">
+                    <a href="./index.html" class="btn btn-outline-light" type="button">
+                        <i class="feather-user"></i> Log Out
+                    </a>
+                </form>
+            </span>
         </div>
     </nav>
     <div class="container my-5">
@@ -32,12 +39,15 @@
             <div class="col my-3 d-flex flex-column align-items-center align-items-md-start  ">   
                 <div class="row">
                     <span class="display-4" id="name">Michelle Wong</span>
-                </div>     
+                </div>
                 <div class="row ">
-                    <span class="lead">MWong23</span>
-                </div>            
+                    <span class="lead">MWong23 <span class="badge badge-pill badge-primary">Female</span></span>
+                </div>
+                <div class="row ">
+                    <span class="lead">412729724891743</span>
+                </div>
+                </div>
             </div>
-        </div>
         <hr/>
         
         <!-- <h1 class="h4 mb-5">Security Settings</h1> -->
@@ -103,70 +113,70 @@
                 </div>
                 <div class="col-sm"></div>
             </div>
-            <button class="btn btn-success">Save Changes</button>
-        </form>
+            
 
-        <hr/>
-
-        <h2 class="h5 mt-2 mb-3">Edit Password  <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            data-target="#passwordModal"
-            data-toggle="modal"
-            class="infoButton"
-          >
-            <circle cx="12" cy="12" r="10" />
-            <line x1="12" y1="16" x2="12" y2="12"/>
-            <line x1="12" y1="8" x2="12.01" y2="8" />
-
-    
-          </svg>
-          </i>
-            <div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="passwordModalLabel"><strong>Password Information</strong></h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+            <hr />
+            
+            <h2 class="h5 mt-2 mb-3">Edit Password <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" data-target="#passwordModal" data-toggle="modal" class="infoButton">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="16" x2="12" y2="12" />
+                    <line x1="12" y1="8" x2="12.01" y2="8" />
+            
+            
+                </svg>
+                </i>
+                <div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="passwordModalLabel"><strong>Password Information</strong></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Date of Last Password Change: 21/11/2024 <br><br>
+                                Password Expiry Date: 26/12/2050 <br><br>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                    Date of Last Password Change: 21/11/2024 <br><br>
-                    Password Expiry Date: 26/12/2050 <br><br>
-                    </div>
-                  </div>
                 </div>
-              </div></h2>
+            </h2>
 
-        <form>
-            <div class="form-row">  
+            <div class="form-row">
                 <div class="col-lg mb-md-0">
                     <div class="form-group">
                         <label for="new-pass">New Password</label>
                         <input type="password" name="new-pass" class="form-control">
                     </div>
-                </div> 
-
+                </div>
+            
                 <div class="col-md-1"></div>
-
+            
                 <div class="col-lg mb-md-0">
                     <div class="form-group">
                         <label for="new-pass-re">Re-enter New Password</label>
                         <input type="password" name="new-pass-re" class="form-control">
                     </div>
-                </div> 
+                </div>
+                
             </div>
-            <button class="btn btn-success">Submit</button>
+    
+            <div class="form-row mt-4">
+                <div class="col">
+                    <a href="./profile.html" class="btn btn-success ml-2 px-4" type="submit">Save Changes</a>
+                    <a href="./profile.html" class="btn btn-success ml-2 px-4" type="cancel"> Cancel </a>
+                </div>
+            </div>
         </form>
+
+        
+
     </div>
+
     
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
