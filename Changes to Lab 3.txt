@@ -1,0 +1,25 @@
+----  April 7th, 2020 -----
+
+-- - 12:45pm --
+
+- Fixed non-collapsing hamburger nav links by including JQuery and Javascript
+
+- Sign In button now links to profile.html
+
+- Added "Log Out" Button to profile.html and security.html (Reflected in gimp xcf)
+
+- Changed "Profile Information" to "Edit Profile Information" (Reflected in gimp xcf)
+
+- Added "Cancel" button on both profile.html and security.html (Reflected in gimp xcf)
+
+- "Cancel" button goes back to profile.html
+
+- Deleted "Submit" button and rearranged "Edit Password Group" placement in security.html (Reflected in gimp xcf)
+
+- Also added gender, and accound number in security.html to mirror design in profile.html (Reflected in gimp xcf
+
+- Cleaned up folder by erasing unused files
+
+--   1:43pm --
+
+- "Home" Navbar Tab and "Prime Service" now link to the index.html for all pages
