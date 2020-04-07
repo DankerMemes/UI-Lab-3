@@ -21,3 +21,14 @@
 .infoButton:hover{
     stroke: #0275d8 ;
 }
+
+
+height{
+    height: 100vh;
+}
+
+.footer{
+    height: 7vh;
+   margin: 0 0 -50px 0!important;
+  
+}
